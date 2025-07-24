@@ -15,59 +15,318 @@
       <section class="info">
         <div class="box pfp">
           <div class="pfp-wrapper">
-            <img class="pfp-img" src="pfp.jpg" alt="Profile Picture" />
+            <img class="pfp__img" src="pfp.jpg" alt="Profile Picture" />
           </div>
         </div>
-        <div class="name">
-          <div class="credentials">
-            <p class="greetings">Hello I am</p>
-            <h1 class="name">Gragam Hunt</h1>
-            <p class="profession">Brand/Logo Designer</p>
+        <div class="box name">
+          <div class="creds">
+            <p contenteditable class="creds__greet">Hello I am</p>
+            <div class="creds-inner">
+              <h1 class="creds__name">Graham Hunt</h1>
+              <p class="creds__prof">Brand/Logo Designer</p>
+            </div>
           </div>
         </div>
         <div class="box lang">
           <div class="lang__wrapper">
             <h2 class="lang__title">Languages</h2>
             <div class="lang__list-wrapper">
-              <div class="lang__item">
-                <div class="lang__name">
-                  <p>English</p>
-                  <span>color</span>
+              <div class="lang__list-inenr">
+                <div class="lang__item">
+                  <div class="lang__name">
+                    <p>English</p>
+                  </div>
+                </div>
+                <div class="lang__item">
+                  <div class="lang__name">
+                    <p>Spanish</p>
+                  </div>
+                </div>
+                <div class="lang__item">
+                  <div class="lang__name">
+                    <p>French</p>
+                  </div>
                 </div>
               </div>
-              <div class="lang__item">
-                <div class="lang__name">
-                  <p>Spanish</p>
-                  <span>color</span>
+              <div class="lang__item-bars">
+                <div class="lang__item-bar">
+                  <span class="lang__item-bar-fill lang__item-bar_full"></span>
                 </div>
-              </div>
-              <div class="lang__item">
-                <div class="lang__name">
-                  <p>French</p>
-                  <span>color</span>
+                <div class="lang__item-bar">
+                  <span
+                    class="lang__item-bar-fill lang__item-bar_type-semi-full-a"
+                  ></span>
+                </div>
+                <div class="lang__item-bar">
+                  <span
+                    class="lang__item-bar-fill lang__item-bar_type-semi-full-b"
+                  ></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="education">
-        <div class="box education">
-          <h2>Education</h2>
+      <section class="education-section">
+        <div class="ed education">
+          <div class="education-inner">
+            <h2 class="education-title">Education</h2>
+            <div class="education__list">
+              <div class="education__item education_highlighted">
+                <p class="education__year">2024</p>
+                <div class="education__tags">
+                  <p class="education__title education_highlighted">UX/UI</p>
+                  <span class="education_highlighted">#UX</span>
+                  <span class="education_highlighted">#research</span>
+                  <span class="education_highlighted">#DesignSystem</span>
+                  <span class="education_highlighted">#Agile</span>
+                  <span class="education_highlighted">#wireframing</span>
+                  <span class="education_highlighted">#figma</span>
+                  <span class="education_highlighted">#IA</span>
+                </div>
+                <p class="education__school">Neoland</p>
+              </div>
+              <div class="education__item">
+                <p class="education__year">2022</p>
+                <div class="education__tags">
+                  <p class="education__title">Product designer</p>
+                  <span>#analytics</span>
+                  <span>#research</span>
+                  <span>#prototype</span>
+                  <span>#wireframes</span>
+                </div>
+                <p class="education__school">Coursera</p>
+              </div>
+              <div class="education__item">
+                <p class="education__year">2017-2021</p>
+                <div class="education__tags">
+                  <p class="education__title">Graphic design</p>
+                  <span>#branding</span>
+                  <span>#web</span>
+                  <span>#illustration</span>
+                  <span>#adobe</span>
+                </div>
+                <p class="education__school">Cali Institute of the Arts</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box interests">
-          <h2>Interests</h2>
-        </div>
-        <div class="box contacts">
-          <h2>Contacts</h2>
+        <div class="interests">
+          <div class="interests__header">
+            <h2 class="interests__title">Interests</h2>
+            <div class="interests__tags">
+              <span class="interests__tag">branding</span>
+              <span class="interests__tag">brand identity</span>
+              <span class="interests__tag">logo</span>
+              <span class="interests__tag">typography</span>
+              <span class="interests__tag">photography</span>
+              <span class="interests__tag">designing</span>
+              <span class="interests__tag">poster design</span>
+              <span class="interests__tag">research</span>
+              <span class="interests__tag">social networks</span>
+              <span class="interests__tag">illustration</span>
+            </div>
+          </div>
+          <div class="contacts">
+            <h2 class="contacts__title">
+              Let´s chat! I´m ready to work on exciting projects
+            </h2>
+            <div class="contacts__info">
+              <p>ivann19bj@gmail.com</p>
+              <span>|</span>
+              <p>+34 666 666 666</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="tools">
-        <div class="box tools">
-          <h2>Tools</h2>
+      <section class="tools-section">
+        <div class="tools">
+          <h2 class="tools__title">Tools</h2>
+          <div class="tools__container">
+            <h3 class="tools__subtitle">Design</h3>
+            <ul class="tools__list">
+              <li class="tools__item">
+                <img
+                  src="./assets/figma.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/crreative.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/miro.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/notion.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/meet.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/analytics.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="tools__container">
+            <h3 class="tools__subtitle">no-code</h3>
+            <ul class="tools__list">
+              <li class="tools__item">
+                <img
+                  src="./assets/zapier.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/webflow.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/framer.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/wordpress.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="tools__container">
+            <h3 class="tools__subtitle">artificial intelligence</h3>
+            <ul class="tools__list">
+              <li class="tools__item">
+                <img
+                  src="./assets/chargpt.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/copilot.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+              <li class="tools__item">
+                <img
+                  src="./assets/midjourney.svg"
+                  alt="Figma icon"
+                  width="10"
+                  height="15"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="box exp">
-          <h2>Experience</h2>
+        <div class="exp">
+          <h2 class="exp__title">Experience</h2>
+          <div class="exp__items">
+            <div class="exp__item exp_highlighted">
+              <span class="exp__item-badge">most recent</span>
+              <p class="exp__item-date">Jul. 2023 - Ago. 2023</p>
+              <div class="exp__item-content">
+                <div class="exp__item-content-inner">
+                  <h3 class="exp__item-title">Senior Graphic Designer</h3>
+                  <p class="exp__item-description">Pinnacle | Full-time</p>
+                </div>
+                <ul class="exp__item-achievements">
+                  <li class="exp__item-achievement">
+                    Research and brainstorm various design ideas for content and
+                    marketing.
+                  </li>
+                  <li class="exp__item-achievement">
+                    Review the work submitted by Junior Designers and sharing
+                    feedback.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp__item">
+              <p class="exp__item-date">Ene. 2021 - Jul. 2023</p>
+              <div class="exp__item-content">
+                <div class="exp__item-content-inner">
+                  <h3 class="exp__item-title">Graphic / Web designer</h3>
+                  <p class="exp__item-description">Double Square | Full-time</p>
+                </div>
+                <ul class="exp__item-achievements">
+                  <li class="exp__item-achievement">
+                    Development of internal projects from scratch, product
+                    design of brands.
+                  </li>
+                  <li class="exp__item-achievement">
+                    Landing page, webapps and hybrid apps
+                  </li>
+                  <li class="exp__item-achievement">
+                    Taking decisions with stakeholders for the future of
+                    products such as Beagle labs, myur...
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="exp__item">
+              <p class="exp__item-date">Feb. 2021 - Jul. 2023</p>
+              <div class="exp__item-content">
+                <div class="exp__item-content-inner">
+                  <h3 class="exp__item-title">Graphic Designer</h3>
+                  <p class="exp__item-description">Freelance</p>
+                </div>
+                <ul class="exp__item-achievements">
+                  <li class="exp__item-achievement">
+                    Visual design for Events, Brands and Products.
+                  </li>
+                  <li class="exp__item-achievement">
+                    Product design, Packaging Design
+                  </li>
+                  <li class="exp__item-achievement">Logo Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
