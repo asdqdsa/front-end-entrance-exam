@@ -2,12 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CV V2</title>
+    <link rel="icon" type="image/svg+xml" href="javascript.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <main class="cv">
+      <section class="info">
+        <div class="box pfp">
+          <div class="pfp-wrapper">
+            <img class="pfp-img" src="pfp.jpg" alt="Profile Picture" />
+          </div>
+        </div>
+        <div class="name">
+          <div class="credentials">
+            <p class="greetings">Hello I am</p>
+            <h1 class="name">Gragam Hunt</h1>
+            <p class="profession">Brand/Logo Designer</p>
+          </div>
+        </div>
+        <div class="box lang">
+          <div class="lang__wrapper">
+            <h2 class="lang__title">Languages</h2>
+            <div class="lang__list-wrapper">
+              <div class="lang__item">
+                <div class="lang__name">
+                  <p>English</p>
+                  <span>color</span>
+                </div>
+              </div>
+              <div class="lang__item">
+                <div class="lang__name">
+                  <p>Spanish</p>
+                  <span>color</span>
+                </div>
+              </div>
+              <div class="lang__item">
+                <div class="lang__name">
+                  <p>French</p>
+                  <span>color</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education">
+        <div class="box education">
+          <h2>Education</h2>
+        </div>
+        <div class="box interests">
+          <h2>Interests</h2>
+        </div>
+        <div class="box contacts">
+          <h2>Contacts</h2>
+        </div>
+      </section>
+      <section class="tools">
+        <div class="box tools">
+          <h2>Tools</h2>
+        </div>
+        <div class="box exp">
+          <h2>Experience</h2>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
