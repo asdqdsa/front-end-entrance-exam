@@ -19,7 +19,7 @@ Link to [deploy](https://asdqdsa.github.io/front-end-entrance-exam/)
 
 #### Install & Run Locally
 
-1. `git clone https://github.com/your-username/your-repo-name.git`
-2. `cd [your-repo-name]`
+1. `git clone https://github.com/asdqdsa/front-end-entrance-exam`
+2. `cd front-end-entrance-exam`
 3. `npm install`
 4. To start development server run `npm run dev`
