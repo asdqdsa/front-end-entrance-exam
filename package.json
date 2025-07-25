@@ -8,14 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "prod": "vite build && vite preview",
-    "deploy": "gh-pages -d .",
+    "deploy": "gh-pages -d dist",
     "lint:fix": "stylelint '**/*.{scss,css}' --fix",
     "eslint": "eslint . --ext .js",
     "eslint:check": "npx eslint . --quiet",
     "eslint:fix": "npx eslint .  --fix --quiet"
   },
   "devDependencies": {
-    "vite": "^5.2.0",
     "eslint": "^9.17.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.1.0",
@@ -34,6 +33,12 @@
     "stylelint": "^16.12.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-config-standard": "^36.0.1",
-    "stylelint-order": "^6.0.4"
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.12.1",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.9.0"
   }
 }
