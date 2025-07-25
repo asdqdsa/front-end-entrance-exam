@@ -40,6 +40,7 @@
   --focus-green-0: #28d97999;
   --focus-green-50: #28d97980;
   --focus-green-100: #28d97900;
+  --download-btn-size: 48px;
 }
 
 html {
@@ -60,10 +61,31 @@ body {
   font-family: var(--font);
 }
 
+.download-btn {
+  position: fixed;
+  z-index: 10;
+  top: -6px;
+  right: -6px;
+  border: none;
+  background-color: var(--light-green);
+  block-size: var(--download-btn-size);
+  border-bottom-left-radius: 20%;
+  color: var(--text-white);
+  cursor: pointer;
+  inline-size: var(--download-btn-size);
+  padding-block-start: var(--pad-sm);
+  transition: transform 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(10%) translateX(-10%);
+}
+
 .cv {
   display: flex;
   max-width: 100%;
   flex-direction: column;
+  margin: 0 auto;
   gap: var(--gap);
   inline-size: var(--cv-inline-size);
   padding-block: var(--cv-pad-block);
@@ -427,9 +449,9 @@ body {
 .tools__item {
   position: relative;
   display: flex;
-  width: calc(50% - var(--gap-lg) / 2);
   align-items: center;
   justify-content: center;
+  inline-size: calc(50% - var(--gap-lg) / 2);
 }
 
 .exp {
@@ -551,4 +573,33 @@ body {
 .edit-animated {
   border-radius: var(--rounded-xs);
   animation: edit-focus 0.6s ease-in-out;
+}
+
+@media (width <= 425px) {
+  .info,
+  .education-section,
+  .tools-section {
+    flex-direction: column;
+  }
+
+  .tools {
+    max-inline-size: 100%;
+  }
+
+  .tools__list {
+    justify-content: center;
+  }
+
+  .tools__item {
+    inline-size: unset;
+  }
+
+  .cv {
+    inline-size: 100%;
+    padding-inline: var(--pad-md);
+  }
+
+  .education__list {
+    grid-template-columns: 1fr;
+  }
 }
